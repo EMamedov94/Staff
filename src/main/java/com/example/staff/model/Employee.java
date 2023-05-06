@@ -19,7 +19,7 @@ public class Employee {
     private Long id;
     private String firstname;
     private String lastname;
-    private int phoneNumber;
+    private String phoneNumber;
     @Enumerated(value = EnumType.STRING)
     private PositionEnum position;
     @Enumerated(value = EnumType.STRING)
