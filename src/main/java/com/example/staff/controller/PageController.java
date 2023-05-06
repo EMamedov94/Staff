@@ -17,7 +17,7 @@ public class PageController {
     private final EmployeeService employeeService;
 
     @GetMapping("/")
-    public List<Employee> index() {
-        return employeeService.showAllEmployees();
+    public ResponseEntity<List<Employee>> index() {
+        return new ResponseEntity<>(employeeService.showAllEmployees(), HttpStatus.OK);
     }
 }
